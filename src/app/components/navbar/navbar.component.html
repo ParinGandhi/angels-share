@@ -1,0 +1,45 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="btn-group" dropdown>
+      <button
+        id="button-basic"
+        dropdownToggle
+        type="button"
+        class="btn btn-dark dropdown-toggle"
+        aria-controls="dropdown-basic"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul
+        id="dropdown-basic"
+        *dropdownMenu
+        class="dropdown-menu"
+        role="menu"
+        aria-labelledby="button-basic"
+      >
+        <li role="menuitem"><a class="dropdown-item" href="#">History</a></li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="#">Types</a>
+        </li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="#">Facts</a>
+        </li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="#">Recipes</a>
+        </li>
+        <li role="menuitem">
+          <a class="dropdown-item" href="#">Whiskey DB</a>
+        </li>
+      </ul>
+    </div>
+    <a class="navbar-brand" href="#" style="display: flex; align-items: center">
+      <img
+        src="../assets/logo.png"
+        alt=""
+        height="75"
+        class="d-inline-block align-text-top"
+      />
+      <span class="siteTitle">Angel's Share</span>
+    </a>
+  </div>
+</nav>

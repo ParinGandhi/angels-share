@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";
+
+* {
+  font-family: "Coda", cursive;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
