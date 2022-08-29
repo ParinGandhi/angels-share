@@ -1,27 +1,34 @@
 <h2 class="text-center">The History of Whiskey</h2>
 <hr />
-<h3 class="pt-5">2000 BC</h3>
-<p>
-  The art of
-  <dfn
-    tooltip="/ˌdistəˈlāSH(ə)n/ - the action of purifying a liquid by a process of heating and cooling."
-    placement="top"
-  >
-    distillation
-  </dfn>
-  was founded in ancient Mesopotamia. Mainly to be used to produce perfumes and
-  aromatics.
-</p>
-<h3 class="pt-5">100 AD</h3>
-<p>
-  The first written record of distilling is found. Ancient Greek philosopher
-  <a href="javascript:void(0)" (click)="openModal(alexanderOfAphrodisias)"
-    >Alexander of Aphrodisias</a
-  >
-  describes the process of taking sea water and distilling it into pure drinking
-  water. Medieval civilizations evolved their techniques over the following
-  centuries, although still not resulting in alcohol.
-</p>
+
+<div class="card mt-5">
+  <h5 class="card-header">2000 BC</h5>
+  <div class="card-body">
+    <p>
+      The art of
+      <a href="javascript:void(0)" (click)="openModal(distillation)"
+        >distillation</a
+      >
+      was founded in ancient Mesopotamia. Mainly to be used to produce perfumes
+      and aromatics.
+    </p>
+  </div>
+</div>
+
+<div class="card mt-5">
+  <h5 class="card-header">100 AD</h5>
+  <div class="card-body">
+    <p>
+      The first written record of distilling is found. Ancient Greek philosopher
+      <a href="javascript:void(0)" (click)="openModal(alexanderOfAphrodisias)"
+        >Alexander of Aphrodisias</a
+      >
+      describes the process of taking sea water and distilling it into pure
+      drinking water. Medieval civilizations evolved their techniques over the
+      following centuries, although still not resulting in alcohol.
+    </p>
+  </div>
+</div>
 
 <h3 class="pt-5">500-1000 AD</h3>
 <p>
@@ -217,6 +224,12 @@
   New York.
 </p>
 
+<cite
+  ><a href="https://www.bottleneckmgmt.com/blog/whiskey-history-timeline/"
+    >Whisley History: A Timeline of Whiskey</a
+  ></cite
+>
+
 <ng-template #alexanderOfAphrodisias>
   <div class="modal-header">
     <h4 class="modal-title pull-left">Alexander of Aphrodisias</h4>
@@ -244,5 +257,23 @@
       that he was styled, by way of pre-eminence, "the commentator" (ὁ
       ἐξηγητής).
     </p>
+  </div>
+</ng-template>
+
+<ng-template #distillation>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Distillation</h4>
+    <button
+      type="button"
+      class="btn-close close pull-right"
+      aria-label="Close"
+      (click)="modalRef?.hide()"
+    >
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p><strong>/ˌdistə'lāSH(ə)n/</strong></p>
+    <p>The action of purifying a liquid by a process of heating and cooling.</p>
   </div>
 </ng-template>
