@@ -61,7 +61,10 @@
     <p>
       Around this time, the earliest records of alcohol distillation appear in
       Italy, with it being distilled from wine. The technique was recounted by
-      Ramon Llull (1232 – 1315).
+      <a href="javascript:void(0)" (click)="openModal(ramonLlull)"
+        >Ramon Llull</a
+      >
+      (1232 – 1315).
     </p>
   </div>
 </div>
@@ -70,9 +73,11 @@
   <h5 class="card-header">1405 AD</h5>
   <div class="card-body">
     <p>
-      The first written record of 'whisky' appears in the Irish Annals of
-      Clonmacnoise, where is was written that the head of a clan died after
-      “taking a surfeit [excessive amount] of aqua vitae” at Christmas.
+      The first written record of 'whisky' appears in the Irish
+      <a href="javascript:void(0)" (click)="openModal(clonmacnoise)"
+        >Annals of Clonmacnoise</a
+      >, where is was written that the head of a clan died after “taking a
+      surfeit [excessive amount] of aqua vitae” at Christmas.
     </p>
   </div>
 </div>
@@ -307,8 +312,7 @@
       Bourbon really hit the big time, as American Congress declared bourbon
       whiskey the country’s official distilled spirit. They also laid out the
       specific regulations that are to be met in order to label a whiskey as
-      bourbon. (For more details, read the What is Bourbon? section of our
-      whiskey introduction.)
+      bourbon.
     </p>
   </div>
 </div>
@@ -349,21 +353,12 @@
       <span aria-hidden="true" class="visually-hidden">&times;</span>
     </button>
   </div>
-  <div class="modal-body">
-    <p><strong>(Greek: Ἀλέξανδρος ὁ Ἀφροδισιεύς; fl. 200 AD)</strong></p>
-    <p>
-      was a Peripatetic philosopher and the most celebrated of the Ancient Greek
-      commentators on the writings of Aristotle. He was a native of Aphrodisias
-      in Caria, and lived and taught in Athens at the beginning of the 3rd
-      century, where he held a position as head of the Peripatetic school. He
-      wrote many commentaries on the works of Aristotle, extant are those on the
-      Prior Analytics, Topics, Meteorology, Sense and Sensibilia, and
-      Metaphysics. Several original treatises also survive, and include a work
-      On Fate, in which he argues against the Stoic doctrine of necessity; and
-      one On the Soul. His commentaries on Aristotle were considered so useful
-      that he was styled, by way of pre-eminence, "the commentator" (ὁ
-      ἐξηγητής).
-    </p>
+  <div class="modal-body" style="height: 80vh">
+    <iframe
+      style="width: 100%; height: 100%"
+      src="https://en.wikipedia.org/wiki/Alexander_of_Aphrodisias"
+      frameborder="0"
+    ></iframe>
   </div>
 </ng-template>
 
@@ -382,5 +377,47 @@
   <div class="modal-body">
     <p><strong>/ˌdistə'lāSH(ə)n/</strong></p>
     <p>The action of purifying a liquid by a process of heating and cooling.</p>
+  </div>
+</ng-template>
+
+<ng-template #ramonLlull>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Ramon Llull</h4>
+    <button
+      type="button"
+      class="btn-close close pull-right"
+      aria-label="Close"
+      (click)="modalRef?.hide()"
+    >
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="height: 80vh">
+    <iframe
+      style="width: 100%; height: 100%"
+      src="https://en.wikipedia.org/wiki/Ramon_Llull"
+      frameborder="0"
+    ></iframe>
+  </div>
+</ng-template>
+
+<ng-template #clonmacnoise>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Annals of Clonmacnoise</h4>
+    <button
+      type="button"
+      class="btn-close close pull-right"
+      aria-label="Close"
+      (click)="modalRef?.hide()"
+    >
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="height: 80vh">
+    <iframe
+      style="width: 100%; height: 100%"
+      src="https://en.wikipedia.org/wiki/Annals_of_Clonmacnoise"
+      frameborder="0"
+    ></iframe>
   </div>
 </ng-template>

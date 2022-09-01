@@ -13,3 +13,7 @@
 .dropdown-toggle::after {
   display: none;
 }
+
+.modal-dialog {
+  min-width: 80vw !important;
+}
