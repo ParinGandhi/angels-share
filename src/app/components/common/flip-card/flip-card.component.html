@@ -1,0 +1,27 @@
+<div class="scene">
+  <div class="card">
+    <div class="card__face card__face--front">
+      <img src="{{ cardInfo.imageLink }}" />
+    </div>
+    <div class="card__face card__face--back">
+      <h5 class="text-center mt-3">{{ cardInfo.placeInfo.name }}</h5>
+      <h6 class="text-center mt-2">
+        <em>{{ cardInfo.placeInfo.description }}</em>
+      </h6>
+      <hr />
+      <p class="text-center mb-0">
+        {{ cardInfo.placeInfo.address.street }}
+      </p>
+      <p class="text-center">
+        {{ cardInfo.placeInfo.address.city }}
+        {{ cardInfo.placeInfo.address.state }}.
+        {{ cardInfo.placeInfo.address.zip }}
+      </p>
+      <p class="text-center">
+        <a href="{{ cardInfo.placeInfo.website }}" target="_blank">{{
+          cardInfo.placeInfo.website
+        }}</a>
+      </p>
+    </div>
+  </div>
+</div>

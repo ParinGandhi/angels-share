@@ -10,6 +10,9 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { HistoryComponent } from './components/history/history.component';
+import { FlipCardComponent } from './components/common/flip-card/flip-card.component';
+import { NewBadgeComponent } from './components/common/new-badge/new-badge.component';
+import { OdditiesComponent } from './components/oddities/oddities.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { HistoryComponent } from './components/history/history.component';
     NavbarComponent,
     HomeComponent,
     HistoryComponent,
+    FlipCardComponent,
+    NewBadgeComponent,
+    OdditiesComponent,
   ],
   imports: [
     BrowserModule,
