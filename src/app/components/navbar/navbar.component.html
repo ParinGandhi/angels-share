@@ -21,16 +21,18 @@
           <a class="dropdown-item" [routerLink]="['/history']">History</a>
         </li>
         <li role="menuitem">
-          <a class="dropdown-item" href="#">Types</a>
+          <a class="dropdown-item disabled" href="#">Types</a>
         </li>
         <li role="menuitem">
-          <a class="dropdown-item" href="#">Timeline</a>
+          <a class="dropdown-item disabled" href="#">Timeline</a>
         </li>
         <li role="menuitem">
-          <a class="dropdown-item" href="#">Facts</a>
+          <a class="dropdown-item" [routerLink]="['/facts']"
+            >Facts <app-new-badge></app-new-badge
+          ></a>
         </li>
         <li role="menuitem">
-          <a class="dropdown-item" href="#">Recipes</a>
+          <a class="dropdown-item disabled" href="#">Recipes</a>
         </li>
         <li role="menuitem">
           <a class="dropdown-item" [routerLink]="['/oddities']"

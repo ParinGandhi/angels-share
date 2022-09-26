@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { FactsComponent } from './components/facts/facts.component';
 import { HistoryComponent } from './components/history/history.component';
 import { HomeComponent } from './components/home/home.component';
 import { OdditiesComponent } from './components/oddities/oddities.component';
@@ -23,6 +24,11 @@ const routes: Routes = [
   {
     path: 'oddities',
     component: OdditiesComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'facts',
+    component: FactsComponent,
     pathMatch: 'full',
   },
 ];
