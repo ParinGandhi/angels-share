@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-12">
+    <h2>Quotes</h2>
+    <h6>Everyone is talking about whiskey</h6>
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col-md-12">
+    <figure *ngFor="let quote of quotes">
+      <blockquote class="blockquote">
+        <p>{{ quote.text }}</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        <cite title="{{ quote.author }}">{{ quote.author }}</cite>
+      </figcaption>
+    </figure>
+  </div>
+</div>

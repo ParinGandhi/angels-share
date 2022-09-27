@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
@@ -18,6 +19,7 @@ import { NewBadgeComponent } from './components/common/new-badge/new-badge.compo
 import { OdditiesComponent } from './components/oddities/oddities.component';
 import { FactsComponent } from './components/facts/facts.component';
 import { MountainDewComponent } from './components/facts/mountain-dew/mountain-dew.component';
+import { QuotesComponent } from './components/quotes/quotes.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,13 @@ import { MountainDewComponent } from './components/facts/mountain-dew/mountain-d
     OdditiesComponent,
     FactsComponent,
     MountainDewComponent,
+    QuotesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),

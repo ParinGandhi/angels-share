@@ -4,6 +4,7 @@ import { FactsComponent } from './components/facts/facts.component';
 import { HistoryComponent } from './components/history/history.component';
 import { HomeComponent } from './components/home/home.component';
 import { OdditiesComponent } from './components/oddities/oddities.component';
+import { QuotesComponent } from './components/quotes/quotes.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,11 @@ const routes: Routes = [
   {
     path: 'facts',
     component: FactsComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'quotes',
+    component: QuotesComponent,
     pathMatch: 'full',
   },
 ];
